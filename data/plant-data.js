@@ -44,7 +44,7 @@ const corn = {
     image: 'x',
     icon: 'c',
     description: `Corn is an annual grass in the latin Paceae family. 
-    It is vital to the global food system. The plant can grow up to 100cm tall 
+    It is vital to the global food system. The plant can grow up to 3m(9.84ft) tall 
     and is believed to have originated from Central America`,
     family: 'grass',
     space: 'z',
