@@ -56,7 +56,9 @@ const berries = {
     name: 'berries',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Berries come in a vast variety of different fruit. 
+    A berry is simply a fruit with seeds & pulp produced from the ovary of a single flower
+    For our intents and purposes we'll be fovusing on black, razz, blue, and strawberries`,
     family: 'heather',
     space: 'z',
     recomendations: 'a',
@@ -67,7 +69,9 @@ const carrot = {
     name: 'carrot',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Carrots are biennial meaning they occur every two years. 
+    Most commonly carrots are grown for the root vegetable, however, 
+    the stems and leafs also provide great nutritional value and can be added to salads or entrees`,
     family: 'apiaceae',
     space: 'z',
     recomendations: 'a',
@@ -78,7 +82,10 @@ const potato = {
     name: 'potato',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Potatos latin family is the Solanaceae, typically grown for edible tubers.
+    The plant produces white or blue flowers and small berries. 
+    It is grown for the root vegetable and not the berries it produces. Potatos come in a variety of colors and flavors.
+    These are annual plants and will need to be replanted every growing season.`,
     family: 'solanaceae',
     space: 'z',
     recomendations: 'a',
@@ -89,7 +96,9 @@ const radish = {
     name: 'radish',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Radishes can be grown annualy or biennialy and are part of the Brassicaceae family. 
+    The radish is grown for it's root, it will produce purple and pink flowers. 
+    The radish root can be used for salads or cooked in stew/ with meat to add flavor and nutrients`,
     family: 'brassicaceae',
     space: 'z',
     recomendations: 'a',
@@ -100,7 +109,9 @@ const squash = {
     name: 'squash',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Squash are herbaceous and annual. 
+    The flowers on squash are typically yellow or orange and the fruit produced can range from green, white, yellow, to orange
+    The origin of squash is believed to be North & Central America`,
     family: 'cucurbita',
     space: 'z',
     recomendations: 'a',
@@ -111,7 +122,9 @@ const lettuce = {
     name: 'lettuce',
     image: 'x',
     icon: 'c',
-    description: 'y',
+    description: `Lettuce can be both annual or biennial but is typically planted annualy. 
+    There are many varieties of lettuce but a majority prefer similar conditions. Lettuce is often green or red in color.
+    The plant prefers more shaded spaces and does not thrive when exposed to direct sunlight for too long.`,
     family: 'daisy',
     space: 'z',
     recomendations: 'a',
