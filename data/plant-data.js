@@ -9,7 +9,7 @@ const tomato = {
     family: 'nightshade',
     space: 'z',
     recomendations: 'a',
-    companions: 'marigold, oregano, parsley, onions/chives, basil, amaranth'
+    companions: [{'marigold'}, {'oregano'}, {'parsley'}, onions/chives, basil, amaranth]
 };
 const cucumber = {
     id: cucumber,
@@ -22,7 +22,7 @@ const cucumber = {
     family: 'gourd',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const pepper = {
     id: pepper,
@@ -36,7 +36,7 @@ const pepper = {
     family: 'nightshade',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const corn = {
     id: corn,
@@ -49,7 +49,7 @@ const corn = {
     family: 'grass',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const berries = {
     id: berries,
@@ -62,7 +62,7 @@ const berries = {
     family: 'heather',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const carrot = {
     id: carrot,
@@ -75,7 +75,7 @@ const carrot = {
     family: 'apiaceae',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const potato = {
     id: potato,
@@ -89,7 +89,7 @@ const potato = {
     family: 'solanaceae',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const radish = {
     id: radish,
@@ -102,7 +102,7 @@ const radish = {
     family: 'brassicaceae',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const squash = {
     id: squash,
@@ -115,7 +115,7 @@ const squash = {
     family: 'cucurbita',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
 const lettuce = {
     id: lettuce,
@@ -128,5 +128,20 @@ const lettuce = {
     family: 'daisy',
     space: 'z',
     recomendations: 'a',
-    companions: 'b'
+    companions: ['b']
 };
+
+const plants = [
+    tomato,
+    cucumber,
+    pepper,
+    corn,
+    berries,
+    carrot,
+    potato,
+    radish,
+    squash,
+    lettuce
+]
+
+export default plants;
