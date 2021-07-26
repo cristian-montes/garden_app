@@ -1,6 +1,6 @@
 const tomato = {
-    id: tomato,
-    name: 'tomato',
+    id: 'tomato',
+    name: 'Tomato',
     image: 'x',
     icon: 'c',
     description: `Herbaceous annual in the Solanaceae latin family. 
@@ -9,11 +9,11 @@ const tomato = {
     family: 'nightshade',
     space: 'z',
     recomendations: 'a',
-    companions: [{'marigold'}, {'oregano'}, {'parsley'}, onions/chives, basil, amaranth]
+    companions: [{ id: 'marigold' }, { id: 'oregano' }, { id :'parsley' }, { id: 'onions/chives' }, { id: 'basil' }, { id: 'amaranth' }]
 };
 const cucumber = {
-    id: cucumber,
-    name: 'cucumber',
+    id: 'cucumber',
+    name: 'Cucumber',
     image: 'x',
     icon: 'c',
     description: `Warm season, vining annual. Part of the Cucurbitaceae latin family.
@@ -25,8 +25,8 @@ const cucumber = {
     companions: ['b']
 };
 const pepper = {
-    id: pepper,
-    name: 'pepper',
+    id: 'pepper',
+    name: 'Pepper',
     image: 'x',
     icon: 'c',
     description: `Peppers come in a variety of shapes, sizes, and colors. 
@@ -39,8 +39,8 @@ const pepper = {
     companions: ['b']
 };
 const corn = {
-    id: corn,
-    name: 'corn',
+    id: 'corn',
+    name: 'Corn',
     image: 'x',
     icon: 'c',
     description: `Corn is an annual grass in the latin Paceae family. 
@@ -52,21 +52,21 @@ const corn = {
     companions: ['b']
 };
 const berries = {
-    id: berries,
-    name: 'berries',
+    id: 'berries',
+    name: 'Berries',
     image: 'x',
     icon: 'c',
     description: `Berries come in a vast variety of different fruit. 
     A berry is simply a fruit with seeds & pulp produced from the ovary of a single flower
-    For our intents and purposes we'll be fovusing on black, razz, blue, and strawberries`,
+    For our intents and purposes we'll be focusing on black, razz, blue, and strawberries`,
     family: 'heather',
     space: 'z',
     recomendations: 'a',
     companions: ['b']
 };
 const carrot = {
-    id: carrot,
-    name: 'carrot',
+    id: 'carrot',
+    name: 'Carrot',
     image: 'x',
     icon: 'c',
     description: `Carrots are biennial meaning they occur every two years. 
@@ -78,8 +78,8 @@ const carrot = {
     companions: ['b']
 };
 const potato = {
-    id: potato,
-    name: 'potato',
+    id: 'potato',
+    name: 'Potato',
     image: 'x',
     icon: 'c',
     description: `Potatos latin family is the Solanaceae, typically grown for edible tubers.
@@ -92,8 +92,8 @@ const potato = {
     companions: ['b']
 };
 const radish = {
-    id: radish,
-    name: 'radish',
+    id: 'radish',
+    name: 'Radish',
     image: 'x',
     icon: 'c',
     description: `Radishes can be grown annualy or biennialy and are part of the Brassicaceae family. 
@@ -105,8 +105,8 @@ const radish = {
     companions: ['b']
 };
 const squash = {
-    id: squash,
-    name: 'squash',
+    id: 'squash',
+    name: 'Squash',
     image: 'x',
     icon: 'c',
     description: `Squash are herbaceous and annual. 
@@ -118,8 +118,8 @@ const squash = {
     companions: ['b']
 };
 const lettuce = {
-    id: lettuce,
-    name: 'lettuce',
+    id: 'lettuce',
+    name: 'Lettuce',
     image: 'x',
     icon: 'c',
     description: `Lettuce can be both annual or biennial but is typically planted annualy. 
@@ -142,6 +142,6 @@ const plants = [
     radish,
     squash,
     lettuce
-]
+];
 
 export default plants;
