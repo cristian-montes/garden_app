@@ -17,6 +17,7 @@ const tomato = {
         'basil',
         'amaranth'
     ] };
+
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
