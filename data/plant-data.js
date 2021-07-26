@@ -1,15 +1,14 @@
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
-    image: 'x',
-    icon: 'c',
+    image: 'tomato.jpg',
+    icon: 'tomato-icon.png',
     description: `Herbaceous annual in the Solanaceae latin family. 
     Grown for edible fruit. The plant produces yellow flowers. 
     These flowers develop into a round fruit that can come in a variety of colors. `,
     family: 'nightshade',
-    space: 'z',
-    recomendations: 'a',
-
+    space: 2.25,
+    recomendations: 'trellis',
     companions: [
         'marigold',
         'oregano',
