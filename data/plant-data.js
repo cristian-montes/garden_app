@@ -9,7 +9,7 @@ const tomato = {
     family: 'nightshade',
     space: 'z',
     recomendations: 'a',
-    companions: [{'marigold'}, {'oregano'}, {'parsley'}, onions/chives, basil, amaranth]
+    companions: [{'marigold'}, {'oregano'}, {'parsley'}, onions/chives, basil, amaranth];
 };
 const cucumber = {
     id: cucumber,
