@@ -12,10 +12,10 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
-export function findByUser(array, username) {
+export function findByUser(array, id) {
     for (let index = 0; index < array.length; index++) {
         const item = array[index];
-        if (item.username === username) {
+        if (item.username === id) {
             return item;
         }
     }

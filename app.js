@@ -24,7 +24,7 @@ userForm.addEventListener('submit', (e) => {
     const formData = new FormData(userForm);
     const newUser = createUser(formData);
     saveUser(newUser);
-    window.location.replace('./list');
+    window.location.replace('./choice-page');
 });
 
 logInBtn.addEventListener('click', (e) => {
