@@ -1,3 +1,5 @@
+import plants from './plant-data.js';
+
 let USER = 'USER';
 
 
@@ -21,4 +23,18 @@ export function findByUser(array, id) {
     }
 
     return null;
+}
+
+export function addPlant(plantId) {
+    const user = getUser();
+    const plant = findByUser(plants, plantId);
+    if (plant){
+        plant.qty += 1;
+    }
+    else {
+        const newPlant = { id: plantId, qty: 1 };
+        user.push(newPlant);
+
+    }
+    saveUser(user);
 }
