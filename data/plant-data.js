@@ -21,7 +21,7 @@ const tomato = {
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Warm season, vining annual. Part of the Cucurbitaceae latin family.
     Produces yellow flowers that typically 
@@ -34,7 +34,7 @@ const cucumber = {
 const pepper = {
     id: 'pepper',
     name: 'Pepper',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Peppers come in a variety of shapes, sizes, and colors. 
     They are part of the Capisicum genus that is a sub-family of the Solanaceae latin family,
@@ -48,7 +48,7 @@ const pepper = {
 const corn = {
     id: 'corn',
     name: 'Corn',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Corn is an annual grass in the latin Paceae family. 
     It is vital to the global food system. The plant can grow up to 3m(9.84ft) tall 
@@ -61,7 +61,7 @@ const corn = {
 const berries = {
     id: 'berries',
     name: 'Berries',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Berries come in a vast variety of different fruit. 
     A berry is simply a fruit with seeds & pulp produced from the ovary of a single flower
@@ -74,7 +74,7 @@ const berries = {
 const carrot = {
     id: 'carrot',
     name: 'Carrot',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Carrots are biennial meaning they occur every two years. 
     Most commonly carrots are grown for the root vegetable, however, 
@@ -87,7 +87,7 @@ const carrot = {
 const potato = {
     id: 'potato',
     name: 'Potato',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Potatos latin family is the Solanaceae, typically grown for edible tubers.
     The plant produces white or blue flowers and small berries. 
@@ -101,7 +101,7 @@ const potato = {
 const radish = {
     id: 'radish',
     name: 'Radish',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Radishes can be grown annualy or biennialy and are part of the Brassicaceae family. 
     The radish is grown for it's root, it will produce purple and pink flowers. 
@@ -114,7 +114,7 @@ const radish = {
 const squash = {
     id: 'squash',
     name: 'Squash',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Squash are herbaceous and annual. 
     The flowers on squash are typically yellow or orange and the fruit produced can range from green, white, yellow, to orange
@@ -127,7 +127,7 @@ const squash = {
 const lettuce = {
     id: 'lettuce',
     name: 'Lettuce',
-    image: 'x',
+    image: 'tomato.jpg',
     icon: 'c',
     description: `Lettuce can be both annual or biennial but is typically planted annualy. 
     There are many varieties of lettuce but a majority prefer similar conditions. Lettuce is often green or red in color.
