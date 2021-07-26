@@ -8,7 +8,7 @@ const tomato = {
     These flowers develop into a round fruit that can come in a variety of colors. `,
     family: 'nightshade',
     space: 2.25,
-    recomendations: 'trellis',
+    recommendations: 'trellis',
     companions: [
         'marigold',
         'oregano',
@@ -28,7 +28,7 @@ const cucumber = {
      into curved cylinder fruit although shapes may vary.`,
     family: 'gourd',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const pepper = {
@@ -42,7 +42,7 @@ const pepper = {
     Peppers are perennials meaning they will grow back for several years given the proper care`,
     family: 'nightshade',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const corn = {
@@ -55,7 +55,7 @@ const corn = {
     and is believed to have originated from Central America`,
     family: 'grass',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const berries = {
@@ -68,7 +68,7 @@ const berries = {
     For our intents and purposes we'll be focusing on black, razz, blue, and strawberries`,
     family: 'heather',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const carrot = {
@@ -81,7 +81,7 @@ const carrot = {
     the stems and leafs also provide great nutritional value and can be added to salads or entrees`,
     family: 'apiaceae',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const potato = {
@@ -95,7 +95,7 @@ const potato = {
     These are annual plants and will need to be replanted every growing season.`,
     family: 'solanaceae',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const radish = {
@@ -108,7 +108,7 @@ const radish = {
     The radish root can be used for salads or cooked in stew/ with meat to add flavor and nutrients`,
     family: 'brassicaceae',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const squash = {
@@ -121,7 +121,7 @@ const squash = {
     The origin of squash is believed to be North & Central America`,
     family: 'cucurbita',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 const lettuce = {
@@ -134,7 +134,7 @@ const lettuce = {
     The plant prefers more shaded spaces and does not thrive when exposed to direct sunlight for too long.`,
     family: 'daisy',
     space: 'z',
-    recomendations: 'a',
+    recommendations: 'a',
     companions: ['b']
 };
 
