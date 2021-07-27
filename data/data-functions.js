@@ -2,18 +2,19 @@ import plants from './plant-data.js';
 
 let USER = 'USER';
 
-
+//SAVEUSER FUNCTION
 export function saveUser(userObject){
     let userString = JSON.stringify(userObject);
     localStorage.setItem(USER, userString);
 }
 
-
+//GET USER FUNCTION
 export function getUser(){
     const userString = localStorage.getItem(USER);
     return JSON.parse(userString);
 }
 
+//FIND BY USER FUNCTION
 export function findByUser(array, id) {
     for (let index = 0; index < array.length; index++) {
         const item = array[index];
@@ -25,6 +26,7 @@ export function findByUser(array, id) {
     return null;
 }
 
+//FIND BY ID FUNCTION
 export function findById(array, id) {
     for (let index = 0; index < array.length; index++) {
         const item = array[index];
@@ -36,7 +38,7 @@ export function findById(array, id) {
     return null;
 }
 
-export function addPlant(plantId) {
+export function addPlantFunc(plantId) {
     const user = getUser();
     const plant = findById(plants, plantId);
     if (plant){
@@ -44,7 +46,7 @@ export function addPlant(plantId) {
     }
     else {
         const newPlant = { id: plantId, qty: 1 };
-        user.plants.push(newPlant);
+        user.plant.push(newPlant);
 
     }
     saveUser(user);
