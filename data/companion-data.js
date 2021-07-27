@@ -10,81 +10,82 @@ const marigold = {
 const basil = {
     id: 'basil',
     name: 'Basil',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Encourage faster growth or better taste.`,
+    image: 'basil.jpeg',
+    icon: 'basil-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
+
     space: 1,
 };
 
 const cilantro = {
     id: 'cilantro',
     name: 'Cilantro',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Attracts beneficial insects that destroy bugs that are bad for the plant.`,
+    image: 'cilantro.jpeg',
+    icon: 'cilantro-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const chives = {
     id: 'chives',
     name: 'Chives',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Improve soil nutrients for the plant while it is growing.`,
+    image: 'chive.jpeg',
+    icon: 'chive-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const carrots = {
     id: 'carrots',
     name: 'Carrots',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Stimulates growth for the plant.`,
+    image: 'carrot.jpeg',
+    icon: 'carrot-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Produce solanine that is a natural insecticide.`,
+    image: 'tomato.jpeg',
+    icon: 'tomato-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const corn = {
     id: 'corn',
     name: 'Corn',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Act as a natural trellis for plants and provide shade.`,
+    image: 'corn.jpeg',
+    icon: 'corn-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const squash = {
     id: 'squash',
     name: 'Squash',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Provide shade and prevent infiltration of weeds`,
+    image: 'squash.jpeg',
+    icon: 'squash-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const radish = {
     id: 'radish',
     name: 'Radish',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Is a great source of springtime nitrogen into the soil.`,
+    image: 'radish.jpeg',
+    icon: 'radish-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
-    image: 'marigold.jpeg',
-    icon: 'marigold-icon.jpg',
-    purpose: `Keeps slugs and other pests away from the plants.`,
+    image: 'cucumber.jpeg',
+    icon: 'cucumber-icon.jpg',
+    purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
