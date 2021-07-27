@@ -12,10 +12,10 @@ const tomato = {
     space: 2,
     recommendations: 'trellis',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[1].name,
+        companionPlants[3].name,
+        companionPlants[2].name
     ] };
 const cucumber = {
     id: 'cucumber',
@@ -29,10 +29,10 @@ const cucumber = {
     space: 2,
     recommendations: 'trellis',
     companions: [
-        'corn',
-        'radish',
-        'carrots',
-        'marigold'
+        companionPlants[0].name,
+        companionPlants[6].name,
+        companionPlants[8].name,
+        companionPlants[4].name
     ]
 };
 const pepper = {
@@ -48,10 +48,10 @@ const pepper = {
     space: 2,
     recommendations: 'stake',
     companions: [
-        'carrots',
-        'cucumbers',
-        'squash',
-        'basil'
+        companionPlants[4].name,
+        companionPlants[9].name,
+        companionPlants[7].name,
+        companionPlants[1].name
     ]
 };
 const corn = {
@@ -63,13 +63,13 @@ const corn = {
     It is vital to the global food system. The plant can grow up to 3m(9.84ft) tall 
     and is believed to have originated from Central America`,
     family: 'grass',
-    space: 'z',
+    space: 2,
     recommendations: 'hills',
     companions: [
-        'potato',
-        'squash',
-        'cucumber',
-        'marigold'
+        companionPlants[7].name,
+        companionPlants[9].name,
+        companionPlants[0].name,
+        companionPlants[1].name
     ]
 };
 const berries = {
@@ -84,10 +84,10 @@ const berries = {
     space: 2,
     recommendations: 'stake',
     companions: [
-        'chives',
-        'marigold',
-        'basil',
-        'tomato'
+        companionPlants[3].name,
+        companionPlants[0].name,
+        companionPlants[1].name,
+        companionPlants[5].name
     ]
 };
 const carrot = {
@@ -99,13 +99,13 @@ const carrot = {
     Most commonly carrots are grown for the root vegetable, however, 
     the stems and leafs also provide great nutritional value and can be added to salads or entrees`,
     family: 'apiaceae',
-    space: 'z',
+    space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const potato = {
@@ -118,13 +118,13 @@ const potato = {
     It is grown for the root vegetable and not the berries it produces. Potatos come in a variety of colors and flavors.
     These are annual plants and will need to be replanted every growing season.`,
     family: 'solanaceae',
-    space: 'z',
+    space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const radish = {
@@ -139,10 +139,10 @@ const radish = {
     space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'cilantro',
-        'carrots'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[2].name,
+        companionPlants[4].name
     ]
 };
 const squash = {
@@ -154,13 +154,13 @@ const squash = {
     The flowers on squash are typically yellow or orange and the fruit produced can range from green, white, yellow, to orange
     The origin of squash is believed to be North & Central America`,
     family: 'cucurbita',
-    space: 'z',
+    space: 2,
     recommendations: 'trellis',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const lettuce = {
@@ -175,10 +175,10 @@ const lettuce = {
     space: 2,
     recommendations: 'plant boxes',
     companions: [
-        'carrots',
-        'corn',
-        'tomato',
-        'cucumber'
+        companionPlants[4].name,
+        companionPlants[6].name,
+        companionPlants[5].name,
+        companionPlants[9].name
     ]
 };
 

@@ -1,6 +1,6 @@
 //IMPORT FUNCTIONS ANF DOM ELEMENTS
 import plants from '../data/plant-data.js';
-import companions from '../data/companion-data.js';
+import companionPlants from '../data/companion-data.js';
 import { findById, saveUser, getUser } from '../data/data-functions.js';
 import { renderChoices } from './render-choice.js';
 
@@ -31,6 +31,7 @@ for (let btnPlant of plantBtns){
                 area: dataPlant.space,
                 companions: dataPlant.companions,
             });
+            console.log(dataPlant.companions);
         }
         saveUser(user);
     });
