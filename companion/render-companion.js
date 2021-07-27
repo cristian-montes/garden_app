@@ -16,3 +16,12 @@ export function renderCompanion(friends) {
 
     return companionDiv;
 }
+
+export function renderIcons(icons){
+    const iconsDiv = document.createElement('div');
+    const iconsImg = document.createElement('img');
+    iconsImg.src = '../assets/icons/' + icons.icon;
+
+    iconsDiv.append(iconsImg);
+    return iconsDiv;
+}
