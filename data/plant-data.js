@@ -1,3 +1,5 @@
+import companions from './companion-data.js';
+
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
@@ -11,11 +13,9 @@ const tomato = {
     recommendations: 'trellis',
     companions: [
         'marigold',
-        'oregano',
-        'parsley',
-        'onions/chives',
+        'chives',
         'basil',
-        'amaranth'
+        'cilantro'
     ] };
 
 const cucumber = {
@@ -29,7 +29,12 @@ const cucumber = {
     family: 'gourd',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'corn',
+        'radish',
+        'carrots',
+        'marigold'
+]
 };
 const pepper = {
     id: 'pepper',
@@ -43,7 +48,12 @@ const pepper = {
     family: 'nightshade',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'carrots',
+        'cucumbers',
+        'squash',
+        'basil'
+    ]
 };
 const corn = {
     id: 'corn',
@@ -56,7 +66,12 @@ const corn = {
     family: 'grass',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'potato',
+        'squash',
+        'cucumber',
+        'marigold'
+    ]
 };
 const berries = {
     id: 'berries',
@@ -69,7 +84,12 @@ const berries = {
     family: 'heather',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'chives',
+        'marigold',
+        'basil',
+        'tomato'
+    ]
 };
 const carrot = {
     id: 'carrot',
@@ -82,7 +102,12 @@ const carrot = {
     family: 'apiaceae',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'marigold',
+        'chives',
+        'basil',
+        'cilantro'
+    ]
 };
 const potato = {
     id: 'potato',
@@ -96,7 +121,12 @@ const potato = {
     family: 'solanaceae',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'marigold',
+        'chives',
+        'basil',
+        'cilantro'
+    ]
 };
 const radish = {
     id: 'radish',
@@ -109,7 +139,12 @@ const radish = {
     family: 'brassicaceae',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'marigold',
+        'chives',
+        'cilantro',
+        'carrots'
+    ]
 };
 const squash = {
     id: 'squash',
@@ -122,7 +157,12 @@ const squash = {
     family: 'cucurbita',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'marigold',
+        'chives',
+        'basil',
+        'cilantro'
+    ]
 };
 const lettuce = {
     id: 'lettuce',
@@ -135,7 +175,12 @@ const lettuce = {
     family: 'daisy',
     space: 'z',
     recommendations: 'a',
-    companions: ['b']
+    companions: [
+        'carrots',
+        'corn',
+        'tomato',
+        'cucumber'
+    ]
 };
 
 const plants = [
