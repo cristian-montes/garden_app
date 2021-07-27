@@ -9,7 +9,7 @@ const tomato = {
     Grown for edible fruit. The plant produces yellow flowers. 
     These flowers develop into a round fruit that can come in a variety of colors. `,
     family: 'nightshade',
-    space: 2.25,
+    space: 2,
     recommendations: 'trellis',
     companions: [
         'marigold',
@@ -27,8 +27,8 @@ const cucumber = {
     Produces yellow flowers that typically 
      into curved cylinder fruit although shapes may vary.`,
     family: 'gourd',
-    space: 'z',
-    recommendations: 'a',
+    space: 2,
+    recommendations: 'trellis',
     companions: [
         'corn',
         'radish',
@@ -46,8 +46,8 @@ const pepper = {
     commonly reffered to as nightshades. The vast variety of peppers encompasses a large scope of flavors.
     Peppers are perennials meaning they will grow back for several years given the proper care`,
     family: 'nightshade',
-    space: 'z',
-    recommendations: 'a',
+    space: 2,
+    recommendations: 'stake',
     companions: [
         'carrots',
         'cucumbers',
@@ -65,7 +65,7 @@ const corn = {
     and is believed to have originated from Central America`,
     family: 'grass',
     space: 'z',
-    recommendations: 'a',
+    recommendations: 'hills',
     companions: [
         'potato',
         'squash',
@@ -82,8 +82,8 @@ const berries = {
     A berry is simply a fruit with seeds & pulp produced from the ovary of a single flower
     For our intents and purposes we'll be focusing on black, razz, blue, and strawberries`,
     family: 'heather',
-    space: 'z',
-    recommendations: 'a',
+    space: 2,
+    recommendations: 'stake',
     companions: [
         'chives',
         'marigold',
@@ -101,7 +101,7 @@ const carrot = {
     the stems and leafs also provide great nutritional value and can be added to salads or entrees`,
     family: 'apiaceae',
     space: 'z',
-    recommendations: 'a',
+    recommendations: 'till soil',
     companions: [
         'marigold',
         'chives',
@@ -120,7 +120,7 @@ const potato = {
     These are annual plants and will need to be replanted every growing season.`,
     family: 'solanaceae',
     space: 'z',
-    recommendations: 'a',
+    recommendations: 'till soil',
     companions: [
         'marigold',
         'chives',
@@ -137,8 +137,8 @@ const radish = {
     The radish is grown for it's root, it will produce purple and pink flowers. 
     The radish root can be used for salads or cooked in stew/ with meat to add flavor and nutrients`,
     family: 'brassicaceae',
-    space: 'z',
-    recommendations: 'a',
+    space: 2,
+    recommendations: 'till soil',
     companions: [
         'marigold',
         'chives',
@@ -156,7 +156,7 @@ const squash = {
     The origin of squash is believed to be North & Central America`,
     family: 'cucurbita',
     space: 'z',
-    recommendations: 'a',
+    recommendations: 'trellis',
     companions: [
         'marigold',
         'chives',
@@ -173,8 +173,8 @@ const lettuce = {
     There are many varieties of lettuce but a majority prefer similar conditions. Lettuce is often green or red in color.
     The plant prefers more shaded spaces and does not thrive when exposed to direct sunlight for too long.`,
     family: 'daisy',
-    space: 'z',
-    recommendations: 'a',
+    space: 2,
+    recommendations: 'plant boxes',
     companions: [
         'carrots',
         'corn',

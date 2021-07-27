@@ -13,6 +13,7 @@ const basil = {
     image: 'basil.jpeg',
     icon: 'basil-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
+
     space: 1,
 };
 
