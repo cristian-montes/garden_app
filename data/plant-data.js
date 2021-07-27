@@ -1,4 +1,4 @@
-// import companions from './companion-data.js';
+import companionPlants from './companion-data.js';
 
 const tomato = {
     id: 'tomato',
