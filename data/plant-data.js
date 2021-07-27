@@ -34,7 +34,7 @@ const cucumber = {
         'radish',
         'carrots',
         'marigold'
-]
+    ]
 };
 const pepper = {
     id: 'pepper',
