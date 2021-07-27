@@ -89,7 +89,7 @@ const cucumber = {
     space: 1,
 };
 
-const companions = [
+const companionPlants = [
     marigold,
     basil,
     cilantro,
@@ -103,4 +103,4 @@ const companions = [
 
 ];
 
-export default companions;
+export default companionPlants;
