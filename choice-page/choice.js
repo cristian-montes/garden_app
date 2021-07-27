@@ -1,5 +1,6 @@
 //IMPORT FUNCTIONS ANF DOM ELEMENTS
 import plants from '../data/plant-data.js';
+import companions from '../data/companion-data.js';
 import { findById, saveUser, getUser } from '../data/data-functions.js';
 import { renderChoices } from './render-choice.js';
 
@@ -18,26 +19,35 @@ const plantBtns = document.querySelectorAll('.add');
 
 for (let btnPlant of plantBtns){
     btnPlant.addEventListener('click', ()=>{
+        const dataPlant = findById(plants, btnPlant.id);
         const plant = findById(user.plant, btnPlant.id);
         if (plant){
             plant.qty ++;
+            plant.area = dataPlant.space * plant.qty;
         } else {
-            user.plant.push({ id: btnPlant.id, name: btnPlant.value, qty: 1 });
+            user.plant.push({ id: btnPlant.id, 
+                name: btnPlant.value, 
+                qty: 1,
+                area: dataPlant.space,
+                companions: dataPlant.companions,
+            });
         }
         saveUser(user);
     });
 }
 
 
-//DISPLAY RESUTLS ON PAGE
+// ADD ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
 const subtractBtns = document.querySelectorAll('.subtract');
 
 for (let btnSubtract of subtractBtns){
     btnSubtract.addEventListener('click', () => {
+        const dataPlant = findById(plants, btnSubtract.value);
         const plant = findById(user.plant, btnSubtract.value);
         
         if (plant){
             plant.qty --;
+            plant.area = dataPlant.space * plant.qty;
         }
         saveUser(user);
     });
