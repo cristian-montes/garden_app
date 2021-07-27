@@ -25,16 +25,29 @@ export function findByUser(array, id) {
     return null;
 }
 
+export function findById(array, id) {
+    for (let index = 0; index < array.length; index++) {
+        const item = array[index];
+        if (item.id === id) {
+            return item;
+        }
+    }
+
+    return null;
+}
+
 export function addPlant(plantId) {
     const user = getUser();
-    const plant = findByUser(plants, plantId);
+    const plant = findById(plants, plantId);
     if (plant){
         plant.qty += 1;
     }
     else {
         const newPlant = { id: plantId, qty: 1 };
-        user.push(newPlant);
+        user.plants.push(newPlant);
 
     }
     saveUser(user);
+   
 }
+

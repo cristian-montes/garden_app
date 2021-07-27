@@ -1,8 +1,8 @@
 export function createUser(formData){
-    const newUser = {
+    const user = {
         username: formData.get('username'),
         password: formData.get('password'),
-        toDos: []
+        plants: []
     };
-    return newUser;
+    return user;
 }
