@@ -5,9 +5,15 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+img{
+    height: 70px;
+    width: 70px;
+}
+
 
 main {
     padding: 30px;
+    background-color: purple;
 }
 
 header {
