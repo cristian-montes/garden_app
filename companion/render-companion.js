@@ -1,3 +1,7 @@
+import { getUser } from '../data/data-functions.js';
+
+
+getUser();
 export function renderCompanion(friends) {
     // for (let things of friends){
     const companionDiv = document.createElement('div');

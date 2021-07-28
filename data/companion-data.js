@@ -104,3 +104,4 @@ const companionPlants = [
 ];
 
 export default companionPlants;
+
