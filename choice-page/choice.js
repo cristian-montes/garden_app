@@ -1,8 +1,8 @@
 //IMPORT FUNCTIONS ANF DOM ELEMENTS
 import plants from '../data/plant-data.js';
-import companions from '../data/companion-data.js';
 import { findById, saveUser, getUser } from '../data/data-functions.js';
 import { renderChoices } from './render-choice.js';
+// import companions from '../data/companion-data.js';
 
 
 const mainSection = document.getElementById('main-section');
@@ -29,15 +29,17 @@ for (let btnPlant of plantBtns){
                 name: btnPlant.value, 
                 qty: 1,
                 area: dataPlant.space,
-                companions: dataPlant.companions,
+                companions: dataPlant.companions
             });
         }
+        areaGet(user.plant);
+        getTotalArea();
         saveUser(user);
     });
 }
 
 
-// ADD ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
+// SUBTRACTING ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
 const subtractBtns = document.querySelectorAll('.subtract');
 
 for (let btnSubtract of subtractBtns){
@@ -49,19 +51,49 @@ for (let btnSubtract of subtractBtns){
             plant.qty --;
             plant.area = dataPlant.space * plant.qty;
         }
+        areaGet(user.plant);
+        getTotalArea();
         saveUser(user);
     });
 }
 
 
+// FUNCTION TO GET AREAS OF PLANTS LS
+function areaGet(array){
+    const newArr = array.map(element => {
+        getUser();
+        return element.area;
+    });
+    return newArr;
+}
+
+
+let totalArea = 0;
+// FUNCTION TO GET TOTAL AREA FROM LS
+function getTotalArea(){
+    const arrayArea = areaGet(user.plant);
+
+    if (arrayArea.length >= 1) totalArea = arrayArea.reduce((a, b) => a + b);
+    if (totalArea === 12){
+        alert('You ran of land!Hit submit button below');
+    }
+}
 
 
 
+//EVENT LISTENER FOR SUBMIT BUTTON AND TOTAL PLANTS
+const submitBtn = document.getElementById('submit-form');
+submitBtn.addEventListener('click', ()=> {
 
+    if (totalArea < 12){
+        alert('Keep on adding GOODIES, still have some Land left to plant');
 
-
-
-
+    } else if (totalArea > 12){
+        alert('you have too many plants, please remove plants');
+    } else {
+        window.location.replace('../companion');
+    }
+});
 
 
 
@@ -136,15 +168,3 @@ for (let btnSubtract of subtractBtns){
 //     mainSection.append(plantDiv);
 
 // }
-
-
-
-
-
-
-
-    
-    
-    
-
-    
