@@ -6,27 +6,28 @@ import { getUser, saveUser, findById, findByName } from '../data/data-functions.
 
 
 const userSection = document.getElementById('user-section');
-const companionSection = document.getElementById('companion-section');
+
 
 //GET DATA FROM LOCAL STORAGE
 const user = getUser();
 const friends = user.plant;
 
 // FUNCTION TO  DISPLAY COMPANIONS FOR VIGGIES PICKED
-function displayCompas(arr){
-    for (let thing of arr.companions){
-        const dataCompanions = findByName(companionPlants, thing);
-        const showCompanions = renderCompanion(dataCompanions);
-        companionSection.appendChild(showCompanions);
-    }
-}
 
 //FUNCTION TO DISPLAY VEGGIES PICKED 
 for (let item of friends){
     const dataPlanta = findById(plants, item.id);
     const showIcons = renderIcons(dataPlanta);
     displayCompas(item);
+   
     userSection.appendChild(showIcons);
+}
+function displayCompas(arr){
+    for (let thing of arr.companions){
+        const dataCompanions = findByName(companionPlants, thing);
+        const showCompanions = renderCompanion(dataCompanions);
+        userSection.appendChild(showCompanions);
+    }
 }
 
 // ADD COMPANIONS TO LOCAL STORAGE USING RELATED BUTTONS
