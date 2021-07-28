@@ -17,10 +17,6 @@ const tomato = {
         companionPlants[3].name,
         companionPlants[2].name
     ] };
-<<<<<<< HEAD
-
-=======
->>>>>>> d81538155057a2aa041b868aca121c06f24c3d71
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
