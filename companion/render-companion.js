@@ -1,7 +1,4 @@
-import { getUser } from '../data/data-functions.js';
 
-
-getUser();
 export function renderCompanion(friends) {
     // for (let things of friends){
     const companionDiv = document.createElement('div');
@@ -38,7 +35,9 @@ export function renderCompanion(friends) {
 
 export function renderIcons(icons){
     // ICONS DIV
+
     const iconsDiv = document.createElement('div');
+    iconsDiv.classList.add('pics');
 
     const iconsImg = document.createElement('img');
     iconsImg.src = '../assets/icons/' + icons.icon;

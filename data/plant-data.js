@@ -21,7 +21,7 @@ const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
     image: 'cucumber.jpg',
-    icon: 'cucumber-icon.jpg',
+    icon: 'cucumber-icon.png',
     description: `Warm season, vining annual. Part of the Cucurbitaceae latin family.
     Produces yellow flowers that typically 
      into curved cylinder fruit although shapes may vary.`,
