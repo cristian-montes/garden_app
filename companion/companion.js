@@ -4,6 +4,7 @@ import companionPlants from '../data/companion-data.js';
 import plants from '../data/plant-data.js';
 import { getUser, saveUser, findById, findByName } from '../data/data-functions.js';
 
+
 const userSection = document.getElementById('user-section');
 const companionSection = document.getElementById('companion-section');
 
@@ -45,8 +46,8 @@ for (let addCompaBtn of compaBtns){
                 area: dataCompaPlant.space,
             });
         }
-        // areaGet(user.plant);
-        // getTotalArea();
+        areaGet(user.companions);
+        getCompaArea();
         saveUser(user);
     });
 }
@@ -61,10 +62,42 @@ for (let subtractCompaBtn of subtractBtns){
             compa.qty --;
             compa.area = dataCompaPlant.space * compa.qty;
         }
+        areaGet(user.companions);
+        getCompaArea();
         saveUser(user);
     });
 }
 
+function areaGet(array){
+    const newArr = array.map(element => {
+        getUser();
+        return element.area;
+    });
+    return newArr;
+}
+
+let totalArea = 0;
+function getCompaArea(){
+    const compArr = areaGet(user.companions);
+    if (compArr.length >= 1) totalArea = compArr.reduce((x, y) => x + y);
+    if (totalArea === 8){
+        alert('Your garden is complete, please submit');
+    }
+
+}
+
+const submitBtn = document.getElementById('submit-form');
+submitBtn.addEventListener('click', ()=> {
+
+    if (totalArea < 8){
+        alert('Keep on adding GOODIES, still have some land left to plant.');
+
+    } else if (totalArea > 8){
+        alert('You have too many plants, please remove plants.');
+    } else {
+        window.location.replace('../map-page');
+    }
+});
 
 
 
