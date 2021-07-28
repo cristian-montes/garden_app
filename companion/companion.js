@@ -9,12 +9,12 @@ const companionSection = document.getElementById('companion-section');
 const user = getUser();
 let friends = user.plant;
 
-for (let item of plants) {
+for (let item of friends) {
     const showIcons = renderIcons(item);
     userSection.appendChild(showIcons);
 }
 
-for (let item of friends) {
+for (let item of companionPlants) {
     const showCompanions = renderCompanion(item);
     companionSection.appendChild(showCompanions);
 }

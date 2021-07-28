@@ -1,4 +1,9 @@
+import { getUser } from '../data/data-functions.js';
+import companionPlants from '../data/companion-data.js';
+
+getUser();
 export function renderCompanion(friends) {
+ 
     const companionDiv = document.createElement('div');
 
     const companionImg = document.createElement('img');
@@ -9,7 +14,6 @@ export function renderCompanion(friends) {
 
     const companionSpan = document.createElement('span');
     companionSpan.textContent = `Purpose: ${friends.purpose}`;
-
     
 
     companionDiv.append(companionImg, companionh1, companionSpan);
