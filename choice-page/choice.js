@@ -32,7 +32,7 @@ for (let btnPlant of plantBtns){
                 area: dataPlant.space,
                 companions: dataPlant.companions
             });
-            console.log(dataPlant.companions);
+            // console.log(dataPlant.companions);
         }
         areaGet(user.plant);
         getTotalArea();
