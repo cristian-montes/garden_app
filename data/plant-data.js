@@ -1,4 +1,4 @@
-// import companions from './companion-data.js';
+import companionPlants from './companion-data.js';
 
 const tomato = {
     id: 'tomato',
@@ -12,12 +12,15 @@ const tomato = {
     space: 2,
     recommendations: 'trellis',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[1].name,
+        companionPlants[3].name,
+        companionPlants[2].name
     ] };
+<<<<<<< HEAD
 
+=======
+>>>>>>> d81538155057a2aa041b868aca121c06f24c3d71
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
@@ -30,10 +33,10 @@ const cucumber = {
     space: 2,
     recommendations: 'trellis',
     companions: [
-        'corn',
-        'radish',
-        'carrots',
-        'marigold'
+        companionPlants[0].name,
+        companionPlants[6].name,
+        companionPlants[8].name,
+        companionPlants[4].name
     ]
 };
 const pepper = {
@@ -49,10 +52,10 @@ const pepper = {
     space: 2,
     recommendations: 'stake',
     companions: [
-        'carrots',
-        'cucumbers',
-        'squash',
-        'basil'
+        companionPlants[4].name,
+        companionPlants[9].name,
+        companionPlants[7].name,
+        companionPlants[1].name
     ]
 };
 const corn = {
@@ -67,10 +70,10 @@ const corn = {
     space: 2,
     recommendations: 'hills',
     companions: [
-        'potato',
-        'squash',
-        'cucumber',
-        'marigold'
+        companionPlants[7].name,
+        companionPlants[9].name,
+        companionPlants[0].name,
+        companionPlants[1].name
     ]
 };
 const berries = {
@@ -85,10 +88,10 @@ const berries = {
     space: 2,
     recommendations: 'stake',
     companions: [
-        'chives',
-        'marigold',
-        'basil',
-        'tomato'
+        companionPlants[3].name,
+        companionPlants[0].name,
+        companionPlants[1].name,
+        companionPlants[5].name
     ]
 };
 const carrot = {
@@ -103,10 +106,10 @@ const carrot = {
     space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const potato = {
@@ -122,10 +125,10 @@ const potato = {
     space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const radish = {
@@ -140,10 +143,10 @@ const radish = {
     space: 2,
     recommendations: 'till soil',
     companions: [
-        'marigold',
-        'chives',
-        'cilantro',
-        'carrots'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[2].name,
+        companionPlants[4].name
     ]
 };
 const squash = {
@@ -158,10 +161,10 @@ const squash = {
     space: 2,
     recommendations: 'trellis',
     companions: [
-        'marigold',
-        'chives',
-        'basil',
-        'cilantro'
+        companionPlants[0].name,
+        companionPlants[3].name,
+        companionPlants[1].name,
+        companionPlants[2].name
     ]
 };
 const lettuce = {
@@ -176,10 +179,10 @@ const lettuce = {
     space: 2,
     recommendations: 'plant boxes',
     companions: [
-        'carrots',
-        'corn',
-        'tomato',
-        'cucumber'
+        companionPlants[4].name,
+        companionPlants[6].name,
+        companionPlants[5].name,
+        companionPlants[9].name
     ]
 };
 

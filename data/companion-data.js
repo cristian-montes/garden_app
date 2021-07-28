@@ -10,7 +10,7 @@ const marigold = {
 const basil = {
     id: 'basil',
     name: 'Basil',
-    image: 'basil.jpeg',
+    image: 'basil.jpg',
     icon: 'basil-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
 
@@ -20,7 +20,7 @@ const basil = {
 const cilantro = {
     id: 'cilantro',
     name: 'Cilantro',
-    image: 'cilantro.jpeg',
+    image: 'cilantro.jpg',
     icon: 'cilantro-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -29,7 +29,7 @@ const cilantro = {
 const chives = {
     id: 'chives',
     name: 'Chives',
-    image: 'chive.jpeg',
+    image: 'chive.jpg',
     icon: 'chive-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -38,7 +38,7 @@ const chives = {
 const carrots = {
     id: 'carrots',
     name: 'Carrots',
-    image: 'carrot.jpeg',
+    image: 'carrot.png',
     icon: 'carrot-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -47,7 +47,7 @@ const carrots = {
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
-    image: 'tomato.jpeg',
+    image: 'tomato.jpg',
     icon: 'tomato-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -56,7 +56,7 @@ const tomato = {
 const corn = {
     id: 'corn',
     name: 'Corn',
-    image: 'corn.jpeg',
+    image: 'corn.jpg',
     icon: 'corn-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -65,7 +65,7 @@ const corn = {
 const squash = {
     id: 'squash',
     name: 'Squash',
-    image: 'squash.jpeg',
+    image: 'squash.jpg',
     icon: 'squash-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -74,7 +74,7 @@ const squash = {
 const radish = {
     id: 'radish',
     name: 'Radish',
-    image: 'radish.jpeg',
+    image: 'radish.jpg',
     icon: 'radish-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -83,13 +83,13 @@ const radish = {
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
-    image: 'cucumber.jpeg',
+    image: 'cucumber.jpg',
     icon: 'cucumber-icon.jpg',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
 };
 
-const companions = [
+const companionPlants = [
     marigold,
     basil,
     cilantro,
@@ -103,5 +103,9 @@ const companions = [
 
 ];
 
+<<<<<<< HEAD
 export default companions;
 
+=======
+export default companionPlants;
+>>>>>>> d81538155057a2aa041b868aca121c06f24c3d71
