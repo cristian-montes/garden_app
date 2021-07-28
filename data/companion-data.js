@@ -103,9 +103,4 @@ const companionPlants = [
 
 ];
 
-<<<<<<< HEAD
-export default companions;
-
-=======
 export default companionPlants;
->>>>>>> d81538155057a2aa041b868aca121c06f24c3d71
