@@ -6,11 +6,13 @@ const mapSection = document.getElementById('map-section');
 
 const user = getUser();
 const veggies = user.plant;
+console.log(veggies);
 
 for (let item of veggies){
     const dataPlanta = findById(plants, item.id);
-    const showIcons = renderPlantRow(dataPlanta);
 
-   
+    const showIcons = renderPlantRow(dataPlanta, item.qty);
+
+
     mapSection.appendChild(showIcons);
 }

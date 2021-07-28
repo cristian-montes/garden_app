@@ -1,6 +1,18 @@
-main{
+html{
+    margin-top: 100px;
+    padding: 20px;
     background-color: green;
+    background-image: url('../assets/plant-box.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
-img{
+
+.plant-bed{
     margin: 4rem;
+}
+
+.plant-icons {
+    height: 80px;
+    width: 80px;
 }
