@@ -70,8 +70,9 @@ function areaGet(array){
 }
 
 
-let totalArea = 0;
 // FUNCTION TO GET TOTAL AREA FROM LS
+let totalArea = 0;
+
 function getTotalArea(){
     const arrayArea = areaGet(user.plant);
 
