@@ -78,7 +78,7 @@ function getTotalArea(){
 
     if (arrayArea.length >= 1) totalArea = arrayArea.reduce((a, b) => a + b);
     if (totalArea === 12){
-        alert('You ran of land!Hit submit button below');
+        alert('You ran of land! Hit submit button below.');
     }
 }
 
@@ -89,10 +89,10 @@ const submitBtn = document.getElementById('submit-form');
 submitBtn.addEventListener('click', ()=> {
 
     if (totalArea < 12){
-        alert('Keep on adding GOODIES, still have some Land left to plant');
+        alert('Keep on adding GOODIES, still have some land left to plant.');
 
     } else if (totalArea > 12){
-        alert('you have too many plants, please remove plants');
+        alert('You have too many plants, please remove plants.');
     } else {
         window.location.replace('../companion');
     }
