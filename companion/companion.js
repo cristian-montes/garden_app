@@ -51,6 +51,20 @@ for (let addCompaBtn of compaBtns){
     });
 }
 
+const subtractBtns = document.querySelectorAll('.subtract');
+for (let subtractCompaBtn of subtractBtns){
+    subtractCompaBtn.addEventListener('click', ()=>{
+        console.log('clicked');
+        const dataCompaPlant = findById(companionPlants, subtractCompaBtn.value);
+        const compa = findById(user.companions, subtractCompaBtn.value);
+        if (compa){
+            compa.qty --;
+            compa.area = dataCompaPlant.space * compa.qty;
+        }
+        saveUser(user);
+    });
+}
+
 
 
 
