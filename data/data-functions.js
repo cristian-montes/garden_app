@@ -1,4 +1,4 @@
-import plants from './plant-data.js';
+// import plants from './plant-data.js';
 
 let USER = 'USER';
 
@@ -14,11 +14,23 @@ export function getUser(){
     return JSON.parse(userString);
 }
 
-//FIND BY USER FUNCTION
+//FIND BY NAME FUNCTION
+export function findByName(array, name) {
+    for (let index = 0; index < array.length; index++) {
+        const item = array[index];
+        if (item.name === name) {
+            return item;
+        }
+    }
+
+    return null;
+}
+
+//FIND BY USERNAME FUNCTION
 export function findByUser(array, id) {
     for (let index = 0; index < array.length; index++) {
         const item = array[index];
-        if (item.username === id) {
+        if (item.user === id) {
             return item;
         }
     }
@@ -38,18 +50,18 @@ export function findById(array, id) {
     return null;
 }
 
-export function addPlantFunc(plantId) {
-    const user = getUser();
-    const plant = findById(plants, plantId);
-    if (plant){
-        plant.qty += 1;
-    }
-    else {
-        const newPlant = { id: plantId, qty: 1 };
-        user.plant.push(newPlant);
+// export function addPlantFunc(plantId) {
+//     const user = getUser();
+//     const plant = findById(plants, plantId);
+//     if (plant){
+//         plant.qty += 1;
+//     }
+//     else {
+//         const newPlant = { id: plantId, qty: 1 };
+//         user.plant.push(newPlant);
 
-    }
-    saveUser(user);
+//     }
+//     saveUser(user);
    
-}
+// }
 
