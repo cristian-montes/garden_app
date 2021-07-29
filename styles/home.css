@@ -8,6 +8,8 @@ header{
 }
 header {
     background-color: rgba(14, 130, 14, 0.855);
+    display: flex;
+    justify-content: flex-end;
 }
 
 main {
