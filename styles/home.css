@@ -6,7 +6,9 @@ header{
     background-color: #0D1B1E;
     color:#B1CF5F;
 }
-
+header {
+    background-color: rgba(14, 130, 14, 0.855);
+}
 
 main {
     background-image:
@@ -26,6 +28,7 @@ form {
     justify-content: center;
     align-content: center;
     border: double;
+    border-color: rgb(105, 202, 14);
     border-radius: 10px;
 }
 
@@ -52,4 +55,21 @@ div{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+header a{
+    font-size:large;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+button{
+    background-color: darkolivegreen;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
 }
