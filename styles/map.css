@@ -16,3 +16,27 @@ html{
     height: 80px;
     width: 80px;
 }
+
+.companion-icons {
+    height: 80px;
+    width: 80px;
+
+}
+
+#plant-section{
+    /* background-color: darkkhaki; */
+    width: 320px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#compa-section{
+    /* background-color: darkkhaki; */
+    width: 320px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+
+}

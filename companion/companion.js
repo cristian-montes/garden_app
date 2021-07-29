@@ -56,7 +56,6 @@ for (let addCompaBtn of compaBtns){
 const subtractBtns = document.querySelectorAll('.subtract');
 for (let subtractCompaBtn of subtractBtns){
     subtractCompaBtn.addEventListener('click', ()=>{
-        console.log('clicked');
         const dataCompaPlant = findById(companionPlants, subtractCompaBtn.value);
         const compa = findById(user.companions, subtractCompaBtn.value);
         if (compa){
@@ -81,7 +80,7 @@ let totalArea = 0;
 function getCompaArea(){
     const compArr = areaGet(user.companions);
     if (compArr.length >= 1) totalArea = compArr.reduce((x, y) => x + y);
-    if (totalArea === 8){
+    if (totalArea === 4){
         alert('Your garden is complete, please submit');
     }
 
@@ -90,10 +89,10 @@ function getCompaArea(){
 const submitBtn = document.getElementById('submit-form');
 submitBtn.addEventListener('click', ()=> {
 
-    if (totalArea < 8){
+    if (totalArea < 4){
         alert('Keep on adding GOODIES, still have some land left to plant.');
 
-    } else if (totalArea > 8){
+    } else if (totalArea > 4){
         alert('You have too many plants, please remove plants.');
     } else {
         window.location.replace('../map-page');
