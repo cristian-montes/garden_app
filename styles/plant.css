@@ -43,9 +43,16 @@ header{
  border: 5px solid black;
  box-shadow: 100%;
  }
- /* #submit-form{
+ /* /* #submit-form{
      display: flex;
      flex-direction: row;
      align-content: center;
      align-items: center;
  } */
+ span{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items:center;
+     text-align: center;
+ }
