@@ -18,6 +18,7 @@ const plantBtns = document.querySelectorAll('.add');
 
 for (let btnPlant of plantBtns){
     btnPlant.addEventListener('click', ()=>{
+
         const dataPlant = findById(plants, btnPlant.id);
         const plant = findById(user.plant, btnPlant.id);
         if (plant){
@@ -32,13 +33,13 @@ for (let btnPlant of plantBtns){
             });
             // console.log(dataPlant.companions);
         }
+        hideSubBtn();
         updateVeggieQty();
         areaGet(user.plant);
         getTotalArea();
         saveUser(user);
     });
 }
-
 
 // SUBTRACTING ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
 const subtractBtns = document.querySelectorAll('.subtract');
@@ -48,16 +49,46 @@ for (let btnSubtract of subtractBtns){
         const dataPlant = findById(plants, btnSubtract.value);
         const plant = findById(user.plant, btnSubtract.value);
         
-        if (plant){
+        if (plant){ 
             plant.qty --;
             plant.area = dataPlant.space * plant.qty;
         }
+        hideSubBtn();
         updateVeggieQty();
         areaGet(user.plant);
         getTotalArea();
         saveUser(user);
+        if (plant.qty === 0 || !plant){
+            btnSubtract.classList.add('hidden');
+        }
     });
 }
+
+
+
+
+
+
+
+// LOOOOOKLM HERE
+function hideSubBtn(){
+    for (let btnSubtract of subtractBtns){
+        const plant = findById(user.plant, btnSubtract.value);
+        if (plant){
+            btnSubtract.classList.remove('hidden');
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 // DISPLAY QTY OF VEGGIES PICKED AT EVERY VEGGIE
 const plantQtyPar = document.querySelectorAll('.qty');
@@ -65,10 +96,8 @@ const plantQtyPar = document.querySelectorAll('.qty');
 function updateVeggieQty(){
     for (let item of user.plant){
         const userPlant = findById(user.plant, item.id);
-    // console.log(userPlant.id);
 
         for (let displayQty of plantQtyPar){
-        // console.log(displayQty.id);
             if (userPlant.id === displayQty.id){
                 displayQty.textContent = `Total Amount of ${userPlant.name}s: ${userPlant.qty}`;
             }
