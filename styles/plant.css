@@ -18,10 +18,13 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #606C38;
+    background-color: #606c38c7;
     justify-content: center;
     align-content: center;
     justify-items: center;
+    border: solid;
+    border-width: 5px;
+    border-radius: 15px;
 }
  .plant-div{
      display: flex;
@@ -36,6 +39,7 @@ header{
      border-color: ivory;
      border-radius: 45%;
      height: 40px;
+     
     
  }
  button:hover {

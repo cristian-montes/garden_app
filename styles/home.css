@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: #0D1B1E;
+    color:#B1CF5F;
+}
+
+
+main {
+    background-image:
+    linear-gradient(
+        rgba(0, 251, 255, 0.45), 
+        rgba(0, 255, 81, 0.386)
+      ),
+      url('../assets/flower-background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.345);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: double;
+    border-radius: 10px;
+}
+
+form label {
+    margin: 5px;
+    
+}
+
+form input{
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    font-size:40px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
