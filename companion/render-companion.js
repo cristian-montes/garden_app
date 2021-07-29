@@ -1,7 +1,9 @@
 
 export function renderCompanion(friends) {
     // for (let things of friends){
+        
     const companionDiv = document.createElement('div');
+    companionDiv.classList.add('companion-div');
 
     const compaBtn = document.createElement('button');
     compaBtn.textContent = `Add ${friends.name}`;

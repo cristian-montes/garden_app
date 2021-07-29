@@ -78,7 +78,7 @@ function getTotalArea(){
 
     if (arrayArea.length >= 1) totalArea = arrayArea.reduce((a, b) => a + b);
     if (totalArea === 8){
-        alert('You ran of land! Hit submit button below.');
+        alert('You ran out of land! Hit submit button below.');
     }
 }
 

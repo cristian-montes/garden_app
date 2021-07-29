@@ -1,5 +1,6 @@
 export function renderChoices(planty){
     const plantDiv = document.createElement('div');
+    plantDiv.classList.add('plant-div');
     
     const plantBtn = document.createElement('button');
     plantBtn.textContent = `Add ${planty.name}`;

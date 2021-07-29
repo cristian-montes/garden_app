@@ -18,9 +18,9 @@ const friends = user.plant;
 for (let item of friends){
     const dataPlanta = findById(plants, item.id);
     const showIcons = renderIcons(dataPlanta);
+    userSection.appendChild(showIcons);
     displayCompas(item);
    
-    userSection.appendChild(showIcons);
 }
 function displayCompas(arr){
     for (let thing of arr.companions){
