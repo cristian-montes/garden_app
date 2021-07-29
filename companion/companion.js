@@ -98,26 +98,3 @@ submitBtn.addEventListener('click', ()=> {
         window.location.replace('../map-page');
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-// WE MIGHT NOT NEED THIS ONE SINCE WE ONLY NEED TO DISPLAY VEGGIES IN LS PICKED BY USER.
-// for (let item of plants) {
-//     const showIcons = renderIcons(item);
-//     userSection.appendChild(showIcons);
-// }
-
-// for (let item of friends) {
-//     const showCompanions = renderCompanion(item);
-//     companionSection.appendChild(showCompanions);
-// }
-

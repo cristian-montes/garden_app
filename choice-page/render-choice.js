@@ -9,7 +9,7 @@ export function renderChoices(planty){
     plantBtn.classList.add('add');
 
     const subtractBtn = document.createElement('button');
-    subtractBtn.textContent = `Subtract${planty.name}`;
+    subtractBtn.textContent = `Subtract ${planty.name}`;
     subtractBtn.value = planty.id;
     subtractBtn.classList.add('subtract');
 

@@ -1,9 +1,7 @@
-//IMPORT FUNCTIONS ANF DOM ELEMENTS
+//IMPORT FUNCTIONS
 import plants from '../data/plant-data.js';
-// import companionPlants from '../data/companion-data.js';
 import { findById, saveUser, getUser } from '../data/data-functions.js';
 import { renderChoices } from './render-choice.js';
-// import companions from '../data/companion-data.js';
 
 
 const mainSection = document.getElementById('main-section');
@@ -59,6 +57,18 @@ for (let btnSubtract of subtractBtns){
     });
 }
 
+// DISPLAY QTY OF VEGGIES PICKED AT EVERY VEGGIE
+const plantQtyPar = document.querySelectorAll('.qty');
+for (let displayQty of plantQtyPar){
+
+    for (let item of user.plant){
+        const userPlant = findById(user.plant, item.id);
+        displayQty.textContent = `Total Amount of ${userPlant.name}s: ${userPlant.qty}`;
+    }
+    
+}
+
+
 
 // FUNCTION TO GET AREAS OF PLANTS LS
 function areaGet(array){
@@ -97,77 +107,3 @@ submitBtn.addEventListener('click', ()=> {
         window.location.replace('../companion');
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for (let item of plants){
-//     // Plant section
-//     const plantDiv = document.createElement('div');
-    
-//     const plantBtn = document.createElement('button');
-//     plantBtn.textContent = item.name;
-//     plantBtn.id = item.id;
-//     plantBtn.value = item.name;
-//     plantBtn.classList.add('add');
-
-//     // const plantInput = document.createElement('input');
-//     // plantInput.type = 'button';
-//     // plantInput.textContent = 'submit';
-    
-//     const plantQty = document.createElement('p');
-//     plantQty.id = item.id;
-//     plantQty.textContent = 'No. of Plants';
-//     plantQty.classList.add('qty');
-    
-//     // const plantSbtract = document.createElement('button');
-    
-//     const plantImg = document.createElement('img');
-//     plantImg.src = '../assets/' + item.image;
-    
-//     const planth1 = document.createElement('h1');
-//     planth1.textContent = `Name: ${item.name}`;
-    
-//     const plantSpan = document.createElement('span');
-//     plantSpan.textContent = `Description: ${item.description}`;
-    
-//     const plantPFam = document.createElement('p');
-//     plantPFam.textContent = `Family: ${item.family}`;
-    
-//     const plantPRec = document.createElement('p');
-//     plantPRec.textContent = `Recommendations: ${item.recommendations}`;
-
-
-//     plantDiv.append(plantImg, planth1, plantSpan, plantPFam,
-//         plantPRec, plantQty, plantBtn);
-        
-   
-        
-//     mainSection.append(plantDiv);
-
-// }
