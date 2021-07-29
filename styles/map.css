@@ -2,9 +2,17 @@ html{
     margin-top: 100px;
     padding: 20px;
     background-color: green;
+    
+}
+main{
+    height: 800px;
+    width: 800px;
+    margin-bottom: 300px;
     background-image: url('../assets/plant-box.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 800px;
+}
+body{
 
 }
 
@@ -13,30 +21,37 @@ html{
 }
 
 .plant-icons {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+    padding-right: 50px;
+    
+    
 }
 
 .companion-icons {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+    padding-right: 50px;
+  
 
 }
 
 #plant-section{
     /* background-color: darkkhaki; */
-    width: 320px;
-    height: 80px;
+    width: 1000px;
+    height: 50px;
     display: flex;
     flex-direction: row;
-
+    margin-left: 300px;
+   
 }
 
 #compa-section{
     /* background-color: darkkhaki; */
-    width: 320px;
+    width: 800px;
     height: 80px;
     display: flex;
     flex-direction: row;
-
+    margin-left: 160px;
+    /* margin-bottom: 200px; */
 }
