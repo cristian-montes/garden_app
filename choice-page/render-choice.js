@@ -1,3 +1,5 @@
+
+
 export function renderChoices(planty){
     const plantDiv = document.createElement('div');
     plantDiv.classList.add('plant-div');
@@ -8,15 +10,18 @@ export function renderChoices(planty){
     plantBtn.value = planty.name;
     plantBtn.classList.add('add');
 
+    
     const subtractBtn = document.createElement('button');
     subtractBtn.textContent = `Subtract ${planty.name}`;
     subtractBtn.value = planty.id;
-    subtractBtn.classList.add('subtract');
+    subtractBtn.classList.add('subtract', 'hidden');
+        
+    
 
     
     const plantQty = document.createElement('p');
     plantQty.id = planty.id;
-    plantQty.textContent = 'No. of Plants';
+    plantQty.textContent = `Amount of ${planty.name}`;
     plantQty.classList.add('qty');
     
     const plantImg = document.createElement('img');

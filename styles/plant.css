@@ -14,6 +14,18 @@ header{
     color:#B1CF5F;
 
 }
+
+/* .hidden{
+    display: none;
+} */
+
+#submit-form {
+    position: fixed;
+    z-index: 1;
+    bottom: 1%;
+    right: 10%;
+}
+
 #main-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,4 +71,8 @@ header{
      justify-content: center;
      align-items:center;
      text-align: center;
+ }
+
+ .hidden{
+     display: none;
  }
