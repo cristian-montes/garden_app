@@ -15,9 +15,16 @@ header{
 
 }
 
-/* #submit-form {
-    position: fixed;
+/* .hidden{
+    display: none;
 } */
+
+#submit-form {
+    position: fixed;
+    z-index: 1;
+    bottom: 1%;
+    right: 10%;
+}
 
 #main-section{
     display: grid;

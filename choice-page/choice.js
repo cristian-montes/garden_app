@@ -12,6 +12,7 @@ for (let veggies of plants){
 }
 
 
+
 // ADD ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
 const user = getUser();
 const plantBtns = document.querySelectorAll('.add');
@@ -51,6 +52,9 @@ for (let btnSubtract of subtractBtns){
         if (plant){
             plant.qty --;
             plant.area = dataPlant.space * plant.qty;
+        }
+        if (!plant.qty){
+            btnSubtract.style.display = 'none';
         }
         updateVeggieQty();
         areaGet(user.plant);
@@ -108,18 +112,6 @@ function getTotalArea(){
 
 //EVENT LISTENER FOR SUBMIT BUTTON AND TOTAL PLANTS
 const submitBtn = document.getElementById('submit-form');
-
-
-window.onscroll = function() {scrollFunction();};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        submitBtn.style.display = 'block';
-    } else {
-        submitBtn.style.display = 'none';
-    }
-}
-
 
 
 
