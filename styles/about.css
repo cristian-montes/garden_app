@@ -1,0 +1,42 @@
+html{
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #606C38;
+}
+img{
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #B1CF5F;
+    background-color: #0D1B1E;
+    padding: 3%;
+}
+#joe-pic{
+    height: 50%;
+}
+#dylan-pic{
+    width: 70%;
+    height: 50%;
+}
+#cristian-pic{
+    width: 65%;
+    height: 50%;
+}
+p{
+    background-color: #B1CF5F;
+    border: black solid 3px;
+    border-radius: 5%;
+    padding: 5%;
+    margin: 5%;
+}
