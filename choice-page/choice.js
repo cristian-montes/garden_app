@@ -59,14 +59,36 @@ for (let btnSubtract of subtractBtns){
 
 // DISPLAY QTY OF VEGGIES PICKED AT EVERY VEGGIE
 const plantQtyPar = document.querySelectorAll('.qty');
-for (let displayQty of plantQtyPar){
 
-    for (let item of user.plant){
-        const userPlant = findById(user.plant, item.id);
-        displayQty.textContent = `Total Amount of ${userPlant.name}s: ${userPlant.qty}`;
+// function updateVeggieQty(){
+//     for (let item of user.plant){
+//         const userPlant = findById(user.plant, item.id);
+//     // console.log(userPlant.id);
+
+//         for (let displayQty of plantQtyPar){
+//         // console.log(displayQty.id);
+//             if (userPlant.id === displayQty.id){
+//                 displayQty.textContent = `Total Amount of ${userPlant.name}s: ${userPlant.qty}`;
+//             }
+//         }
+       
+//     }
+// }
+
+for (let item of user.plant){
+    const userPlant = findById(user.plant, item.id);
+    // console.log(userPlant.id);
+
+    for (let displayQty of plantQtyPar){
+        // console.log(displayQty.id);
+        if (userPlant.id === displayQty.id){
+            displayQty.textContent = `Total Amount of ${userPlant.name}s: ${userPlant.qty}`;
+        }
     }
-    
+       
 }
+    
+
 
 
 
