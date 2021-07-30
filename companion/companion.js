@@ -62,10 +62,28 @@ for (let subtractCompaBtn of subtractBtns){
             compa.qty --;
             compa.area = dataCompaPlant.space * compa.qty;
         }
+        hideSubBtn();
         areaGet(user.companions);
         getCompaArea();
         saveUser(user);
+        if (compa.qty === 0 || !compa){
+            subtractCompaBtn.classList.add('hidden');
+        }
     });
+}
+
+
+
+
+
+// HIDE SUBTRACT BUTTONS
+function hideSubBtn(){
+    for (let subtractCompaBtn of subtractBtns){
+        const compa = findById(user.compa, subtractCompaBtn.value);
+        if (compa){
+            subtractCompaBtn.classList.remove('hidden');
+        }
+    }
 }
 
 function areaGet(array){
