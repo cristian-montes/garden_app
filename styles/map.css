@@ -28,7 +28,7 @@ header a{
     text-decoration: none;
 }
 main{
-    margin-top: 300px;
+    margin-top: 50px;
     height: 500px;
     width: 1400px;
     background-image: url('../assets/plant-box.png');
@@ -38,7 +38,7 @@ main{
 
 
 .plant-bed{
-    margin: 4rem;
+    margin: 1rem;
 }
 
 .plant-icons {
@@ -81,15 +81,10 @@ main{
     /* margin-bottom: 200px; */
 }
 .graph{
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 975px;
-    z-index: 1;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 #myChart{
     margin-left: 125px;
-}
-footer{
-
 }
