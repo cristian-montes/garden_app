@@ -80,3 +80,6 @@ main{
     margin-left: 220px;
     /* margin-bottom: 200px; */
 }
+#myChart{
+    height: 20%;
+}
