@@ -2,7 +2,9 @@ import { getUser, findById } from '../data/data-functions.js';
 import { renderCompanionRow, renderPlantRow } from './render-map.js';
 import plants from '../data/plant-data.js';
 import companionPlants from '../data/companion-data.js';
+// eslint-disable-next-line no-undef
 Chart.defaults.color = 'black';
+// eslint-disable-next-line no-undef
 Chart.defaults.font.size = 20;
 
 
@@ -34,7 +36,7 @@ for (let item of veggies){
 // RENDER PICKED COMPANIONS
 for (let item of companions){
     const dataCompanions = findById(companionPlants, item.id);
-    name.push(item.name);
+    // name.push(item.name);
     companionChart.push(item.qty);
     const showCompanions = renderCompanionRow(dataCompanions, item.qty);
 
