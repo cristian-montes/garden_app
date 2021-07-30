@@ -52,10 +52,10 @@ new Chart(ctx, {
             label: 'veggies',
             data: plantChart,
             backgroundColor: [
-                'green',
+                '#73E2A7',
             ],
             borderColor: [
-                'white',
+                'black',
                
             ],
             borderWidth: 3 },
@@ -91,10 +91,10 @@ new Chart(ctx1, {
             label: 'companions',
             data: companionChart,
             backgroundColor: [
-                'yellow',
+                '#DEF4C6',
             ],
             borderColor: [
-                'white',
+                'black',
                
             ],
             borderWidth: 3 },
@@ -102,7 +102,7 @@ new Chart(ctx1, {
             hidden: true,
             data: companionChart,
             backgroundColor: [
-                'brown',
+                'blue',
             ],
             borderColor: [
                 'white',
