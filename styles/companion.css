@@ -31,6 +31,7 @@ div{
 
   h3 {
    margin: 5px;
+   font-size: 20px;
   }
 
   span{
@@ -42,7 +43,7 @@ img{
 }
 
 button {
-    margin: 5px;
+    margin: 15px;
 }
   
 
