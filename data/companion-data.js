@@ -1,7 +1,7 @@
 const marigold = {
     id: 'marigold',
     name: 'Marigold',
-    image: 'marigold.jpeg',
+    image: 'marigold-icon.png',
     icon: 'marigold-icon.png',
     purpose: `The flower is a natural deterrent to pests and plagues.`,
     space: 1,
@@ -10,7 +10,7 @@ const marigold = {
 const basil = {
     id: 'basil',
     name: 'Basil',
-    image: 'basil.jpg',
+    image: 'basil-icon.png',
     icon: 'basil-icon.png',
     purpose: `Encourage faster growth or better taste.`,
 
@@ -20,7 +20,7 @@ const basil = {
 const cilantro = {
     id: 'cilantro',
     name: 'Cilantro',
-    image: 'cilantro.jpg',
+    image: 'cilantro-icon.png',
     icon: 'cilantro-icon.png',
     purpose: `Attracts beneficial insects that destroy bugs that are bad for the plant.
     `,
@@ -30,7 +30,7 @@ const cilantro = {
 const chives = {
     id: 'chives',
     name: 'Chives',
-    image: 'chive.jpg',
+    image: 'chive-icon.png',
     icon: 'chive-icon.png',
     purpose: `Improve soil nutrients for the plant while it is growing.`,
     space: 1,
@@ -39,7 +39,7 @@ const chives = {
 const carrots = {
     id: 'carrots',
     name: 'Carrots',
-    image: 'carrot.png',
+    image: 'carrot-icon.png',
     icon: 'carrot-icon.png',
     purpose: `Stimulates growth for the plant.`,
     space: 1,
@@ -48,7 +48,7 @@ const carrots = {
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
-    image: 'tomato.jpg',
+    image: 'tomato-icon1.png',
     icon: 'tomato-icon1.png',
     purpose: `Produce solanine that is a natural insecticide.`,
     space: 1,
@@ -57,7 +57,7 @@ const tomato = {
 const corn = {
     id: 'corn',
     name: 'Corn',
-    image: 'corn.jpg',
+    image: 'corn-icon.png',
     icon: 'corn-icon.png',
     purpose: `Act as a natural trellis for plants and provide shade.`,
     space: 1,
@@ -66,7 +66,7 @@ const corn = {
 const squash = {
     id: 'squash',
     name: 'Squash',
-    image: 'squash.jpg',
+    image: 'squash-icon.png',
     icon: 'squash-icon.png',
     purpose: `Provide shade and prevent infiltration of weeds.`,
     space: 1,
@@ -75,7 +75,7 @@ const squash = {
 const radish = {
     id: 'radish',
     name: 'Radish',
-    image: 'radish.jpg',
+    image: 'radish-icon.png',
     icon: 'radish-icon.png',
     purpose: `Is a great source of springtime nitrogen into the soil.`,
     space: 1,
@@ -84,7 +84,7 @@ const radish = {
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
-    image: 'cucumber.jpg',
+    image: 'cucumber-icon.png',
     icon: 'cucumber-icon.png',
     purpose: `Keeps slugs and other pests away from the plants.`,
     space: 1,
