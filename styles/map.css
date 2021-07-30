@@ -1,37 +1,40 @@
 html{
-    margin-top: 100px;
-    padding: 20px;
-    background-color: green;
+   padding-top: 300px;
+    background-image: url('../assets/grass-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 main{
-    height: 800px;
-    width: 800px;
-    margin-bottom: 300px;
+    margin-top: 300px;
+    height: 500px;
+    width: 1400px;
     background-image: url('../assets/plant-box.png');
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 1400px;
 }
-body{
 
-}
 
 .plant-bed{
     margin: 4rem;
 }
 
 .plant-icons {
-    height: 50px;
-    width: 50px;
-    padding-right: 50px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding-right: 20px;
     
     
 }
 
 .companion-icons {
-    height: 50px;
-    width: 50px;
-    padding-right: 50px;
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-right: 20px;
   
 
 }
@@ -42,7 +45,7 @@ body{
     height: 50px;
     display: flex;
     flex-direction: row;
-    margin-left: 300px;
+    margin-left: 350px;
    
 }
 
@@ -52,6 +55,6 @@ body{
     height: 80px;
     display: flex;
     flex-direction: row;
-    margin-left: 160px;
+    margin-left: 220px;
     /* margin-bottom: 200px; */
 }
