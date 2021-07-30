@@ -8,18 +8,19 @@ import companionPlants from '../data/companion-data.js';
 const plantSection = document.getElementById('plant-section');
 const compaSection = document.getElementById('compa-section');
 
-const name = [];
-const plantChart = [];
-const companionChart = [];
+
 
 const user = getUser();
+let name = [];
+let plantChart = [];
+let companionChart = [];
 let veggies = user.plant;
-const companions = user.companions;
+let companions = user.companions;
 
 // RENDER PICKED VEGGIES
 for (let item of veggies){
     const dataPlanta = findById(plants, item.id);
-
+    name.push(item.name);
     const showIcons = renderPlantRow(dataPlanta, item.qty);
 
     plantSection.appendChild(showIcons);
@@ -28,7 +29,8 @@ for (let item of veggies){
 // RENDER PICKED COMPANIONS
 for (let item of companions){
     const dataCompanions = findById(companionPlants, item.id);
-
+    name.push(dataCompanions.companions);
+    companionChart.push(dataCompanions.id);
     const showCompanions = renderCompanionRow(dataCompanions, item.qty);
 
     compaSection.appendChild(showCompanions);
@@ -41,7 +43,7 @@ new Chart(ctx, {
         labels: name,
         datasets: [{
             label: 'veggies',
-            data: plantChart,
+            data: veggies,
             backgroundColor: [
                 'black',
             ],
@@ -51,7 +53,7 @@ new Chart(ctx, {
             ],
             borderWidth: 3 },
         { label: 'companions',
-            data: companionChart,
+            data: companions,
             backgroundColor: [
                 'red',
             ],

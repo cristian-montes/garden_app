@@ -14,11 +14,11 @@ div{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 5px;
+    
 }
 .companion-div{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr ;
+    border: solid;
     background-color: #606C38;
     justify-content: center;
     align-content: center;
@@ -27,4 +27,35 @@ div{
 
 .hidden{
     display: none;
+}
+
+  h3 {
+   margin: 5px;
+   font-size: 20px;
+  }
+
+  span{
+      margin: 5px;
+  }
+  
+img{
+    margin: 5px;
+}
+
+button {
+    margin: 15px;
+}
+  
+
+#submit-form{
+    background-color: rgba(36, 135, 14, 0.869);
+    border: solid;
+    color: honeydew;
+    border-color: black;
+    border-radius: 5px;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    bottom: 3%;
+    right: 10%;
 }
