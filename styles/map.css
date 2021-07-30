@@ -82,6 +82,8 @@ main{
 }
 .graph{
     max-width: 40%;
+    display: flex;
+    flex-direction: row;
 
 }
 
