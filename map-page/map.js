@@ -44,7 +44,7 @@ for (let item of companions){
 var ctx = document.getElementById('myChart').getContext('2d');
 // eslint-disable-next-line no-undef
 new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
         labels: name,
         datasets: [{
