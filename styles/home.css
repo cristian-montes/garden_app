@@ -26,6 +26,7 @@ main {
 form {
     background-color: rgba(0, 0, 0, 0.345);
     padding: 20px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -76,7 +77,18 @@ div img{
     width: 20px;
     margin-right: 5px;
 }
+.garden-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
 
+.garden-div img{
+    height: 60px;
+    width: 60px;
+}
 
 header a{
     font-size:large;

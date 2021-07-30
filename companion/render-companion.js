@@ -11,17 +11,17 @@ export function renderCompanion(friends) {
     compaBtn.classList.add('add');
 
     const subtractBtn = document.createElement('button');
-    subtractBtn.textContent = `Subtract${friends.name}`;
+    subtractBtn.textContent = `Subtract ${friends.name}`;
     subtractBtn.value = friends.id;
     subtractBtn.classList.add('subtract', 'hidden');
 
 
 
     const companionImg = document.createElement('img');
-    companionImg.src = '../assets/' + friends.image;
+    companionImg.src = '../assets/icons/' + friends.image;
         
     const companionh3 = document.createElement('h3');
-    companionh3.textContent = `Name: ${friends.name}`;
+    companionh3.textContent = `${friends.name}`;
     
     const companionSpan = document.createElement('span');
     companionSpan.textContent = `Purpose: ${friends.purpose}`;
