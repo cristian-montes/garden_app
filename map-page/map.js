@@ -8,8 +8,12 @@ import companionPlants from '../data/companion-data.js';
 const plantSection = document.getElementById('plant-section');
 const compaSection = document.getElementById('compa-section');
 
+const name = [];
+const plantChart = [];
+const companionChart = [];
+
 const user = getUser();
-const veggies = user.plant;
+let veggies = user.plant;
 const companions = user.companions;
 
 // RENDER PICKED VEGGIES
@@ -29,32 +33,33 @@ for (let item of companions){
 
     compaSection.appendChild(showCompanions);
 }
-
+console.log(companions);
 var ctx = document.getElementById('myChart').getContext('2d');
 new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: name,
         datasets: [{
-            label: 'Veggies',
-            data: veggies,
+            label: 'veggies',
+            data: plantChart,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'black',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'white',
+               
             ],
-            borderWidth: 1
+            borderWidth: 3 },
+        { label: 'companions',
+            data: companionChart,
+            backgroundColor: [
+                'red',
+            ],
+            borderColor: [
+                'white',
+                
+            ],
+            borderWidth: 3
         }]
     },
     options: {
