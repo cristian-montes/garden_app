@@ -102,7 +102,7 @@ let totalArea = 0;
 function getCompaArea(){
     const compArr = areaGet(user.companions);
     if (compArr.length >= 1) totalArea = compArr.reduce((x, y) => x + y);
-    if (totalArea === 4){
+    if (totalArea === 8){
         alert('Your garden is complete, please submit');
     }
 
@@ -111,10 +111,10 @@ function getCompaArea(){
 const submitBtn = document.getElementById('submit-form');
 submitBtn.addEventListener('click', ()=> {
 
-    if (totalArea < 4){
+    if (totalArea < 8){
         alert('Keep on adding GOODIES, still have some land left to plant.');
 
-    } else if (totalArea > 4){
+    } else if (totalArea > 8){
         alert('You have too many plants, please remove plants.');
     } else {
         window.location.replace('../map-page');
