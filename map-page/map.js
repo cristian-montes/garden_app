@@ -18,8 +18,8 @@ const user = getUser();
 let name = [];
 let plantChart = [];
 let companionChart = [];
-let veggies = user.plant;
-let companions = user.companions;
+const veggies = user.plant;
+const companions = user.companions;
 
 // RENDER PICKED VEGGIES
 for (let item of veggies){
@@ -40,6 +40,7 @@ for (let item of companions){
 
     compaSection.appendChild(showCompanions);
 }
+// console.log(name);
 
 var ctx = document.getElementById('myChart').getContext('2d');
 // eslint-disable-next-line no-undef
@@ -48,7 +49,7 @@ new Chart(ctx, {
     data: {
         labels: name,
         datasets: [{
-            label: 'veggies',
+            label: name,
             data: plantChart,
             backgroundColor: [
                 'green',
@@ -58,7 +59,7 @@ new Chart(ctx, {
                
             ],
             borderWidth: 3 },
-        { label: 'companions',
+        { label: name,
             data: companionChart,
             backgroundColor: [
                 'brown',
