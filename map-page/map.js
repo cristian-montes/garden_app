@@ -2,6 +2,10 @@ import { getUser, findById } from '../data/data-functions.js';
 import { renderCompanionRow, renderPlantRow } from './render-map.js';
 import plants from '../data/plant-data.js';
 import companionPlants from '../data/companion-data.js';
+Chart.defaults.color = 'black';
+Chart.defaults.font.size = 20;
+
+
 
 
 // const mapSection = document.getElementById('map-section');
@@ -30,7 +34,7 @@ for (let item of veggies){
 // RENDER PICKED COMPANIONS
 for (let item of companions){
     const dataCompanions = findById(companionPlants, item.id);
-    name.push(item.companions);
+    name.push(item.name);
     companionChart.push(item.qty);
     const showCompanions = renderCompanionRow(dataCompanions, item.qty);
 
@@ -40,14 +44,14 @@ for (let item of companions){
 var ctx = document.getElementById('myChart').getContext('2d');
 // eslint-disable-next-line no-undef
 new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
         labels: name,
         datasets: [{
             label: 'veggies',
             data: plantChart,
             backgroundColor: [
-                'black',
+                'green',
             ],
             borderColor: [
                 'white',
@@ -57,7 +61,7 @@ new Chart(ctx, {
         { label: 'companions',
             data: companionChart,
             backgroundColor: [
-                'red',
+                'brown',
             ],
             borderColor: [
                 'white',
