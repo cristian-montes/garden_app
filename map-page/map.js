@@ -18,6 +18,7 @@ const compaSection = document.getElementById('compa-section');
 
 const user = getUser();
 let name = [];
+let companionName = [];
 let plantChart = [];
 let companionChart = [];
 let veggies = user.plant;
@@ -36,7 +37,8 @@ for (let item of veggies){
 // RENDER PICKED COMPANIONS
 for (let item of companions){
     const dataCompanions = findById(companionPlants, item.id);
-    // name.push(item.name);
+    companionName.push(item.name);
+
     companionChart.push(item.qty);
     const showCompanions = renderCompanionRow(dataCompanions, item.qty);
 
@@ -53,17 +55,57 @@ new Chart(ctx, {
             label: 'veggies',
             data: plantChart,
             backgroundColor: [
-                'green',
+                '#73E2A7',
             ],
             borderColor: [
-                'white',
+                'black',
                
             ],
             borderWidth: 3 },
         { label: 'companions',
+            hidden: true,
             data: companionChart,
             backgroundColor: [
                 'brown',
+            ],
+            borderColor: [
+                'white',
+                
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var ctx1 = document.getElementById('myChart1').getContext('2d');
+// eslint-disable-next-line no-undef
+new Chart(ctx1, {
+    type: 'pie',
+    data: {
+        labels: companionName,
+        datasets: [{
+            label: 'companions',
+            data: companionChart,
+            backgroundColor: [
+                '#DEF4C6',
+            ],
+            borderColor: [
+                'black',
+               
+            ],
+            borderWidth: 3 },
+        { label: 'companions',
+            hidden: true,
+            data: companionChart,
+            backgroundColor: [
+                'blue',
             ],
             borderColor: [
                 'white',
