@@ -12,7 +12,6 @@ for (let veggies of plants){
 }
 
 
-
 // ADD ITEMS TO LOCAL STORAGE USING RELATED BUTTONS
 const user = getUser();
 const plantBtns = document.querySelectorAll('.add');
@@ -32,7 +31,6 @@ for (let btnPlant of plantBtns){
                 area: dataPlant.space,
                 companions: dataPlant.companions
             });
-            // console.log(dataPlant.companions);
         }
         hideSubBtn();
         updateVeggieQty();
@@ -72,7 +70,7 @@ for (let btnSubtract of subtractBtns){
 
 
 
-// LOOOOOKLM HERE
+// HIDE SUBTRACT BUTTONS
 function hideSubBtn(){
     for (let btnSubtract of subtractBtns){
         const plant = findById(user.plant, btnSubtract.value);
@@ -109,9 +107,6 @@ function updateVeggieQty(){
 }
 
     
-
-
-
 
 // FUNCTION TO GET AREAS OF PLANTS LS
 function areaGet(array){

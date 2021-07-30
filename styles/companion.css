@@ -25,3 +25,6 @@ div{
     justify-items: center;
 }
 
+.hidden{
+    display: none;
+}

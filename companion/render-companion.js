@@ -1,7 +1,6 @@
 
 export function renderCompanion(friends) {
-    // for (let things of friends){
-        
+
     const companionDiv = document.createElement('div');
     companionDiv.classList.add('companion-div');
 
@@ -14,7 +13,7 @@ export function renderCompanion(friends) {
     const subtractBtn = document.createElement('button');
     subtractBtn.textContent = `Subtract${friends.name}`;
     subtractBtn.value = friends.id;
-    subtractBtn.classList.add('subtract');
+    subtractBtn.classList.add('subtract', 'hidden');
 
 
 
@@ -31,12 +30,10 @@ export function renderCompanion(friends) {
     companionDiv.append(companionImg, companionh3, companionSpan, compaBtn, subtractBtn);
         
     return companionDiv;
-    // }
 
 }
 
 export function renderIcons(icons){
-    // ICONS DIV
 
     const iconsDiv = document.createElement('div');
     iconsDiv.classList.add('pics');
@@ -47,21 +44,6 @@ export function renderIcons(icons){
     const iconsNameh1 = document.createElement('h1');
     iconsNameh1.textContent = icons.name;
 
-    // const companionSpan = document.createElement('span');
-    // companionSpan.textContent = `Companion Plants : ${icons.companions}`;
-
     iconsDiv.append(iconsImg, iconsNameh1);
     return iconsDiv;
 }
-
-
-
-
-// export function renderIcons(icons){
-//     const iconsDiv = document.createElement('div');
-//     const iconsImg = document.createElement('img');
-//     iconsImg.src = '../assets/icons/' + icons.icon;
-
-//     iconsDiv.append(iconsImg);
-//     return iconsDiv;
-// }
