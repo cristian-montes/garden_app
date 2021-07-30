@@ -25,10 +25,10 @@ export function renderChoices(planty){
     plantQty.classList.add('qty');
     
     const plantImg = document.createElement('img');
-    plantImg.src = '../assets/' + planty.image;
+    plantImg.src = '../assets/icons/' + planty.image;
     
     const planth1 = document.createElement('h1');
-    planth1.textContent = `Name: ${planty.name}`;
+    planth1.textContent = `${planty.name}`;
     
     const plantSpan = document.createElement('span');
     plantSpan.textContent = `Description: ${planty.description}`;

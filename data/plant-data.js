@@ -3,7 +3,7 @@ import companionPlants from './companion-data.js';
 const tomato = {
     id: 'tomato',
     name: 'Tomato',
-    image: 'tomato.jpg',
+    image: 'tomato-icon1.png',
     icon: 'tomato-icon1.png',
     description: `Herbaceous annual in the Solanaceae latin family. 
     Grown for edible fruit. The plant produces yellow flowers. 
@@ -20,7 +20,7 @@ const tomato = {
 const cucumber = {
     id: 'cucumber',
     name: 'Cucumber',
-    image: 'cucumber.jpg',
+    image: 'cucumber-icon.png',
     icon: 'cucumber-icon.png',
     description: `Warm season, vining annual. Part of the Cucurbitaceae latin family.
     Produces yellow flowers that typically 
@@ -38,7 +38,7 @@ const cucumber = {
 const pepper = {
     id: 'pepper',
     name: 'Pepper',
-    image: 'pepper.jpg',
+    image: 'pepper-icon.png',
     icon: 'pepper-icon.png',
     description: `Peppers come in a variety of shapes, sizes, and colors. 
     They are part of the Capisicum genus that is a sub-family of the Solanaceae latin family,
@@ -57,7 +57,7 @@ const pepper = {
 const corn = {
     id: 'corn',
     name: 'Corn',
-    image: 'corn.jpg',
+    image: 'corn-icon.png',
     icon: 'corn-icon.png',
     description: `Corn is an annual grass in the latin Paceae family. 
     It is vital to the global food system. The plant can grow up to 3m(9.84ft) tall 
@@ -75,7 +75,7 @@ const corn = {
 const berries = {
     id: 'berries',
     name: 'Berries',
-    image: 'berries.jpg',
+    image: 'berries-icon.png',
     icon: 'berries-icon.png',
     description: `Berries come in a vast variety of different fruit. 
     A berry is simply a fruit with seeds & pulp produced from the ovary of a single flower
@@ -93,7 +93,7 @@ const berries = {
 const carrot = {
     id: 'carrot',
     name: 'Carrot',
-    image: 'carrot.jpg',
+    image: 'carrot-icon.png',
     icon: 'carrot-icon.png',
     description: `Carrots are biennial meaning they occur every two years. 
     Most commonly carrots are grown for the root vegetable, however, 
@@ -111,7 +111,7 @@ const carrot = {
 const potato = {
     id: 'potato',
     name: 'Potato',
-    image: 'potato.jpg',
+    image: 'potato-icon.png',
     icon: 'potato-icon.png',
     description: `Potatos latin family is the Solanaceae, typically grown for edible tubers.
     The plant produces white or blue flowers and small berries. 
@@ -130,7 +130,7 @@ const potato = {
 const radish = {
     id: 'radish',
     name: 'Radish',
-    image: 'radish.jpg',
+    image: 'radish-icon.png',
     icon: 'radish-icon.png',
     description: `Radishes can be grown annualy or biennialy and are part of the Brassicaceae family. 
     The radish is grown for it's root, it will produce purple and pink flowers. 
@@ -148,7 +148,7 @@ const radish = {
 const squash = {
     id: 'squash',
     name: 'Squash',
-    image: 'squash.jpg',
+    image: 'squash-icon.png',
     icon: 'squash-icon.png',
     description: `Squash are herbaceous and annual. 
     The flowers on squash are typically yellow or orange and the fruit produced can range from green, white, yellow, to orange
@@ -166,7 +166,7 @@ const squash = {
 const lettuce = {
     id: 'lettuce',
     name: 'Lettuce',
-    image: 'lettuce.jpg',
+    image: 'lettuce-icon.png',
     icon: 'lettuce-icon.png',
     description: `Lettuce can be both annual or biennial but is typically planted annualy. 
     There are many varieties of lettuce but a majority prefer similar conditions. Lettuce is often green or red in color.
