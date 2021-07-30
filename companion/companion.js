@@ -47,6 +47,7 @@ for (let addCompaBtn of compaBtns){
                 area: dataCompaPlant.space,
             });
         }
+        hideSubBtn();
         areaGet(user.companions);
         getCompaArea();
         saveUser(user);
@@ -54,14 +55,17 @@ for (let addCompaBtn of compaBtns){
 }
 
 const subtractBtns = document.querySelectorAll('.subtract');
+
 for (let subtractCompaBtn of subtractBtns){
     subtractCompaBtn.addEventListener('click', ()=>{
         const dataCompaPlant = findById(companionPlants, subtractCompaBtn.value);
         const compa = findById(user.companions, subtractCompaBtn.value);
+
         if (compa){
             compa.qty --;
             compa.area = dataCompaPlant.space * compa.qty;
         }
+
         hideSubBtn();
         areaGet(user.companions);
         getCompaArea();
@@ -79,7 +83,7 @@ for (let subtractCompaBtn of subtractBtns){
 // HIDE SUBTRACT BUTTONS
 function hideSubBtn(){
     for (let subtractCompaBtn of subtractBtns){
-        const compa = findById(user.compa, subtractCompaBtn.value);
+        const compa = findById(user.companions, subtractCompaBtn.value);
         if (compa){
             subtractCompaBtn.classList.remove('hidden');
         }
