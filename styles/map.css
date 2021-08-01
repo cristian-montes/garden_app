@@ -95,3 +95,14 @@ main{
 .chart-2{
     max-width: 40%;
 }
+
+button {
+    background-color: rgb(128, 58, 0);
+    color: honeydew;
+    border: solid;
+    margin: 10px;
+    cursor:grab;
+    border-color: ivory;
+    border-radius: 45%;
+    height: 40px;
+}
